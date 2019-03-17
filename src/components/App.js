@@ -1,28 +1,30 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router,Route} from 'react-router-dom';
 import './App.css';
-import Header from './header/header';
-import Sidebar from './sidebar/sidebar';
-import Chat from './chat/chat'
-class App extends Component {
+import Login from './login/login';
+import Dashboard from './dashboard/dashboard'
+
+class Root extends Component {
+ 
   render() {
     return (
-      <div className="grid-container">
+     <Router > 
+        <Route exact path={'/'}  render={
+          ()=>{
+            return (<Login></Login>)
+          }
+        }></Route>
         
-        <div className="header">
-        <Header ></Header>
-        </div>
-        <div className="userlist">
-        <Sidebar ></Sidebar>
-        </div>
-        <div className="chat">
-        <Chat></Chat>
-        </div>
-        
-
-      </div>
+        <Route  exact path={'/login'} component={Login}></Route>
+        <Route exact path={'/dashboard'} render={
+          ()=>{
+            return (<Dashboard></Dashboard>)
+          }
+        }></Route>
+     </Router>
 
     );
   }
 }
 
-export default App;
+export default Root;
