@@ -1,0 +1,33 @@
+.chat-header ,.chat-footer{
+    background-color: #f9f2f2;
+}
+.chat-body {
+    height: 77vh;
+}
+.chat-header{
+    height: 55px;
+
+}
+.chat-footer{
+    height: 65px;
+
+}
+
+.search-container input {
+    height:40px;
+    border-radius:20px;
+    border: 1px solid lightgrey;
+    width: 90%;
+    text-align:center;
+}
+
+.search-container input:focus{
+    outline:none;
+}
+
+
+.search-container{
+    background-color: #fdfbfb;
+    padding: 10px;
+    position: relative;
+}

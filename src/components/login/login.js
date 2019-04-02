@@ -16,17 +16,15 @@ class Login extends Component {
               <h4>Login</h4>
             </div>
 
-            <div className="text-box">
-                
-            <input  placeholder="User Name" className="form-controller input-border" />
+            <div className="text-box">                
+              <input  placeholder="User Name" className="form-controller input-border" />
             </div>
-            <div className="text-box">
-                
-                <input type="password" placeholder="Password" className="form-controller input-border" />
+            <div className="text-box">                
+              <input type="password" placeholder="Password" className="form-controller input-border" />
             </div>
             <div className="login-footer">
                 <button type="submit" className="btn btn-default" onClick={this.OnLogin}>Login</button>
-                <a>Forgot password</a>
+                <a href="javascript:void(0)">Forgot password</a>
             </div>
 
         </div>

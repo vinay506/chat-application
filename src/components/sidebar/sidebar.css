@@ -1,0 +1,39 @@
+.sidebar {
+    width:100%;
+}
+
+.sidebar-header{
+    width: 100%;   
+    text-align:center; 
+}
+
+.sidebar-header input {
+    height:40px;
+    border-radius:20px;
+    border: 1px solid lightgrey;
+    width: 90%;
+    text-align:center;
+}
+
+.sidebar-header input:focus{
+    outline:none;
+}
+
+.sidebar-content {
+
+}
+
+.user-settings{
+    height: 55px;
+    background-color: #f9f2f2;
+}
+.search-container{
+    background-color: #fdfbfb;
+    padding: 10px;
+    position: relative;
+}
+.search-container i {
+    position: absolute;
+    left: 14%;
+    top: 37%;
+}

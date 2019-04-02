@@ -1,0 +1,17 @@
+.grid-container{
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header header header'
+    'userlist userlist chat chat chat chat chat chat chat'
+    'userlist userlist chat chat chat chat chat chat chat';
+
+}
+.header { grid-area: header; }
+.userlist { 
+  grid-area: userlist;
+  height:95vh;
+  border-right: 1px solid darkgreen;
+  
+}
+.chat { grid-area: chat;  height:95vh}
+
